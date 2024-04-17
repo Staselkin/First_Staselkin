@@ -18,3 +18,15 @@ def prepare_user_list(user_data):
     return user_data
 prepared_users = prepare_user_list(users)
 print(prepared_users)
+
+start_date = datetime.now().date()
+print(start_date)
+current_date = datetime.now()
+day_of_week = current_date.weekday()
+print(day_of_week)
+
+def string_to_date(date_string):
+    return datetime.strptime(date_string, "%Y.%m.%d").date()
+
+
+def find_next_weekday(start_date, weekday):
