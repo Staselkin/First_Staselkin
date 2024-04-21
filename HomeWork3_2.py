@@ -1,11 +1,13 @@
 import random
+from random import sample
 
-print(random.randint(0, 100))
-print(random.randrange(0, 100, 7))
-print(random.choice(['black', 'white', 'red']))
-print(random.choices(['black', 'white', 'red'], k=6, weights=[0, 7, 5]))
+min=1
+max=49
+quantity=6
 
-range_list = list(range(10))
-print(range_list)
-random.shuffle(range_list)
-print(range_list)
+def get_numbers_ticket(min, max, quantity):
+    numbers = random.sample(range(min, max), quantity)
+    return numbers
+
+ticket = sorted(list(get_numbers_ticket(min, max, quantity)))
+print("Лотерейний квиток:", ticket)
