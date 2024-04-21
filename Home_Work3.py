@@ -8,6 +8,3 @@ def get_days_from_today(date):
 date = ("2024.10.09")
 print(get_days_from_today(date))
 
-
-
-
