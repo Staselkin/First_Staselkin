@@ -2,23 +2,13 @@ import random
 from random import sample
 
 min=1
-max=49
+max=10
 quantity=6
 
 def get_numbers_ticket(min, max, quantity):
-    if min_num < 1:
+    if min < 1 or max > 1000 or quantity < 1 or quantity > (max - min + 1):
         return []
-
-    if max_num > 1000:
-        return []
-
-    if min_num >= max_num:
-        return []
-
-    if quantity < 1:
-        return []
-
-    if quantity > (max_num - min_num + 1):
+    if min >= max:
         return []
 
     numbers = random.sample(range(min, max+1), quantity)
