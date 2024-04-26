@@ -16,4 +16,5 @@ start_date= string_to_date("2024.03.26")
 next_monday= find_next_weekday(start_date, 0)
 print(next_monday)
 next_friday = find_next_weekday(start_date, 4) 
-print(next_friday)       
+print(next_friday)    
+   
