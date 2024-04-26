@@ -12,3 +12,4 @@ def get_numbers_ticket(min, max, quantity):
 ticket = sorted(list(get_numbers_ticket(min, max, quantity)))
 print("Лотерейний квиток:", ticket)
 
+#/////
